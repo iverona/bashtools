@@ -1,7 +1,7 @@
 bashtools
 =========
 
-Useful bash scripts
+Useful bash scripts, most of them done quick&dirty, be careful!
 
 ordering.sh
 -----------
