@@ -42,6 +42,13 @@ function usage {
 }
 
 function readParams {
+
+	if [ $# -eq 0 ];
+	then
+		usage
+		exit -1
+	fi
+
 	PARSED_OPTIONS=$(getopt -n "$0"  -o s:d:h --long "source:,dest:,help"  -- "$@")
 	 
 	if [ $? -ne 0 ];
